@@ -1,10 +1,10 @@
 {
-    "key": "my-add-on",
-    "name": "Ping Pong",
-    "description": "My very first add-on",
+    "key": "mission-control",
+    "name": "Mission Control",
+    "description": "Spike ATL node app",
     "vendor": {
-        "name": "Angry Nerds",
-        "url": "https://www.atlassian.com/angrynerds"
+        "name": "Shane Rogers",
+        "url": "https://www.shanerogers.com/"
     },
     "baseUrl": "{{localBaseUrl}}",
     "links": {
@@ -24,30 +24,17 @@
     "modules": {
         "generalPages": [
 
-            // JIRA - Add a Hello World menu item to the navigation bar
-            {
-                "key": "hello-world-page-jira",
-                "location": "system.top.navigation.bar",
-                "name": {
-                    "value": "Hello World"
-                },
-                "url": "/hello-world",
-                "conditions": [{
-                    "condition": "user_is_logged_in"
-                }]
-            },
-
-            // Confluence - Add a Hello World menu item to the navigation bar
-            {
-                "key": "hello-world-page-confluence",
-                "location": "system.header/left",
-                "name": {
-                    "value": "Hello World"
-                },
-                "url": "/hello-world",
-                "conditions": [{
-                    "condition": "user_is_logged_in"
-            }]
-        }]
+             {
+                 "key": "mission-control",
+                 "location": "system.top.navigation.bar",
+                 "name": {
+                     "value": "Mission Control"
+                 },
+                 "url": "/mission-control",
+                 "conditions": [{
+                     "condition": "user_is_logged_in"
+                 }]
+             }
+         ]
     }
 }
