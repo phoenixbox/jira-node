@@ -29,5 +29,8 @@ module.exports = function (app, addon) {
     );
 
     // Add any additional route handlers you need for views or REST resources here...
-
+    app.get('/mission-control', addon.authenticate(), function(req, res) {
+         res.render('mission-control', { title: "Launchpad" });
+    }
+  );
 };

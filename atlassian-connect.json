@@ -24,17 +24,17 @@
     "modules": {
         "generalPages": [
 
-             {
-                 "key": "mission-control",
-                 "location": "system.top.navigation.bar",
-                 "name": {
-                     "value": "Mission Control"
-                 },
-                 "url": "/mission-control",
-                 "conditions": [{
-                     "condition": "user_is_logged_in"
-                 }]
-             }
-         ]
+            {
+                "key": "mission-control",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Mission Control"
+                },
+                "url": "/mission-control",
+                "conditions": [{
+                    "condition": "user_is_logged_in"
+                }]
+            }
+        ]
     }
 }
