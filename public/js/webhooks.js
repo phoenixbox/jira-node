@@ -19,6 +19,7 @@ $(function() {
         request({
           url: '/rest/webhooks/1.0/webhook',
           type: 'POST',
+          headers: {"X-Atlassian-Token": "nocheck"},
           data: {
             "name": "webhook",
             "url": "http://requestb.in/1eivz7v1",
@@ -26,7 +27,6 @@ $(function() {
             "jqlFilter": "Project = JRA AND resolution = Fixed",
             "excludeIssueDetails": false
           },
-          contentType: "application/json",
           success: function(responseText){
             alert( "Success" + responseText );
           },
