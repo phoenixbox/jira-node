@@ -19,7 +19,7 @@
         "installed": "/installed"
     },
     "scopes": [
-        "READ"
+        "READ", "WRITE", "DELETE", "PROJECT_ADMIN", "ADMIN"
     ],
     "modules": {
         "generalPages": [
@@ -35,6 +35,24 @@
                     "condition": "user_is_logged_in"
                 }]
             }
+        ],
+        "webhooks": [
+          {
+            "event": "jira:issue_created",
+            "url": "/issues/created"
+          },
+          {
+            "event": "jira:issue_deleted",
+            "url": "/issues/deleted"
+          },
+          {
+            "event": "jira:issue_updated",
+            "url": "/issues/updated"
+          },
+          {
+            "event": "connect_addon_enabled",
+            "url": "/addon/enabled"
+          }
         ]
     }
 }
