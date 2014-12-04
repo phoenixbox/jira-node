@@ -5,7 +5,6 @@ $(function() {
  // Bridge functionality
  // JiraActivity is registered by an external script that was included
    AP.require(['request', 'JiraActivity'], function(request, JiraActivity) {
-      debugger
        request({
            url: '/rest/api/2/project',
            success: function(response) {

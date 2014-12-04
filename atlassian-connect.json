@@ -23,7 +23,6 @@
     ],
     "modules": {
         "generalPages": [
-
             {
                 "key": "mission-control",
                 "location": "system.top.navigation.bar",
